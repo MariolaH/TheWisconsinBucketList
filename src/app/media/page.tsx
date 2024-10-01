@@ -11,45 +11,38 @@ export default function Media() {
             Media
           </h1>
 
-          {/* Facebook Link */}
+          {/* First YouTube Video Embed */}
           <div
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
-            className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
+            className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
           >
-            <img
-              src="/Fireside.png"
-              alt="Facebook"
-              className="w-30 h-10 md:w-28 md:h-16 mr-4" // Mobile and desktop sizes
-            />
-            <a
-              href="https://www.firesidetheatre.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm md:text-lg font-semibold text-black text-left"
-            >
-              Available at the Fireside Theatre Gift Media
-            </a>
+            <div className="responsive-video">
+              <iframe
+                src="https://www.youtube.com/embed/BHa_n3PSOzI?si=0646JP0AMWIR7Iff"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
 
-          {/* X Link */}
+          {/* Second YouTube Video Embed */}
           <div
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
-            className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
+            className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
           >
-            <img
-              src="/cave.png"
-              alt="X"
-              className="w-50 h-10 md:w-30 md:h-16 mr-4" // Mobile and desktop sizes
-            />
-            <a
-              href="https://www.caveofthemounds.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm md:text-lg font-semibold text-black text-left"
-            >
-              Find it at the Cave of the Mounds Gift Media
-            </a>
+            <div className="responsive-video">
+              <iframe
+                src="https://www.youtube.com/embed/Ur4SgYsD8rw?si=Ikzn2EGlGUEqsIm-"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
+
           {/* Amazon Link */}
           <div
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
@@ -69,20 +62,6 @@ export default function Media() {
               Purchase on Amazon
             </a>
           </div>
-
-          {/* <div className="text-center mt-2 py-20 md:py-24 sm:py-14 flex justify-center">
-            <a
-              href="https://www.amazon.com/Wisconsin-Bucket-List-Ways-Experience/dp/1628470283"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/bucket.png"
-                alt="Amazon"
-                className="w-20 h-20 md:w-36 md:h-36" // Mobile and desktop sizes
-              />
-            </a>
-          </div> */}
         </div>
       </div>
       <Footer />

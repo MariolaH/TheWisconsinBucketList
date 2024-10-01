@@ -72,35 +72,3 @@ const Navbar = () => {
 export default Navbar;
 
 
-
-
-
-// import Link from 'next/link';
-// import Image from 'next/image';
-
-// const Navbar = () => {
-//   return (
-//     <nav style={{ backgroundColor: '#EE1925' }} className="p-4 w-full fixed top-0 left-0 z-50">
-//       <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
-//         {/* Logo Section */}
-//         <div className="flex items-center space-x-4">
-//           {/* Logo Image */}
-//           <Image src="/stateWI.png" alt="Bucket List Logo" width={200} height={200} />
-//         </div>
-
-//         {/* Navigation Links */}
-//         <div className="flex space-x-52 text-white text-2xl font-bold">
-//           <Link href="/shop">Shop</Link>
-//           <Link href="/author">Author</Link>
-//           <Link href="/media">Media</Link>
-//           <Link href="/contact">Contact</Link>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
