@@ -1,101 +1,83 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-white min-h-screen">
+      <Navbar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Top padding to account for the navbar height */}
+      <div className="pt-40 md:pt-40">
+        {/* Header Section */}
+        <header className="container mx-auto py-5 md:py-24 text-center px-4 md:px-0">
+          <h1 className="text-1xl md:text-3xl font-bold text-black py-12 md:py-24 italic">
+            Why just visit when you can explore?
+          </h1>
+        </header>
+
+        {/* Book and Description Section */}
+        <div className="container mx-auto md:px-16 px-14 flex flex-col items-center justify-center md:flex-row md:space-x-8">
+          {/* Book Image */}
+          <div className="w-full md:w-1/3 flex justify-center">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/book.png" // Replace with your book cover image path
+              alt="The Wisconsin Bucket List"
+              width={200} // Smaller size for mobile
+              height={300}
+              className="shadow-lg md:w-[300px] md:h-[400px]" // Set desktop size with md breakpoint
             />
-            Deploy now
-          </a>
+          </div>
+
+          {/* Description */}
+          <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left bg-gray-100 p-8 rounded-lg shadow-lg">
+            <p className="text-sm md:text-lg text-gray-800 ">
+              Whether Wisconsin is your home or you're visiting America's
+              Dairyland, this book is your guide to adventures filled with
+              purpose, meaning, and accomplishment.
+            </p>
+            <p className="text-sm md:text-lg text-gray-800 mt-4">
+              Search for treasure! Wear a cheese head! Take in the view from a
+              lighthouse! Go dog sledding! Both Wisconsin natives and visitors
+              will discover hidden gems in{" "}
+              <span className="text-red-600 italic font-bold">
+                The Wisconsin Bucket List.
+              </span>
+            </p>
+            <p className="text-sm md:text-lg text-gray-800 mt-4">
+              These fun-filled experiences and family adventures will create
+              memories that last a lifetime. You’ll explore new places, meet
+              fascinating people, and savor unique foods, all while gaining a
+              deeper appreciation for the culture that makes Wisconsin so
+              special.
+            </p>
+            <p className="text-sm md:text-lg text-gray-800 mt-4">
+              Concise, honest, and thoughtfully crafted,{" "}
+              <span className="text-red-600 italic font-bold">
+                The Wisconsin Bucket List
+              </span>{" "}
+              promises you the time of your life!
+            </p>
+          </div>
+        </div>
+
+        {/* Buy Now Button */}
+        <div className="text-center mt-8 py-10 md:py-20">
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.amazon.com/Wisconsin-Bucket-List-Ways-Experience/dp/1628470283"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            <button
+              style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)",  backgroundColor: '#EE1925' }}
+              className="text-white font-bold py-3 px-6 md:py-4 md:px-12 rounded mt-6 inline-block text-lg md:text-xl transform transition-all duration-300 hover:bg-red-900 hover:scale-105 hover:shadow-2xl"
+            >
+              Buy Now
+            </button>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <Footer />
     </div>
   );
 }
