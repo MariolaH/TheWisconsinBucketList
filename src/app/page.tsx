@@ -25,7 +25,7 @@ export default function Home() {
               alt="The Wisconsin Bucket List"
               width={200} // Smaller size for mobile
               height={300}
-              className="shadow-lg md:w-[300px] md:h-[400px]" // Set desktop size with md breakpoint
+              className="shadow-lg md:w-[300px] md:h-[430px]" // Set desktop size with md breakpoint
             />
           </div>
 

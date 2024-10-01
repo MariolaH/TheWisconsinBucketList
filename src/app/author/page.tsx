@@ -44,12 +44,17 @@ export default function Author() {
             </div>
 
             {/* Image Section */}
+            <div
+              style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
+              className="shadow-lg rounded-lg"
+            >
             <div className="flex justify-center items-center">
               <img
                 src="/bioPic.png"
                 alt="Kelly Jo Stull"
                 className="rounded-lg shadow-lg"
               />
+            </div>
             </div>
           </div>
         </div>
