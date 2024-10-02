@@ -18,7 +18,7 @@ export default function Author() {
               style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
               className="bg-gray-100 shadow-lg rounded-lg p-8 md:p-10"
             >
-              <p className="text-lg text-gray-800 leading-relaxed mb-8 mt-5">
+              <p className="text-sm md:text-lg text-gray-800 leading-relaxed mb-8 mt-5">
                 Kelly Jo Stull was born in Fond du Lac, Wisconsin and had the
                 childhood chance to travel the Badgerland’s rustic roads, rural
                 valleys, and country highways with her mother driving Kelly Jo
@@ -27,7 +27,7 @@ export default function Author() {
                 learn her first word, “cow,” entirely appropriate for a little
                 girl growing up in America’s Dairyland.
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed mb-8">
+              <p className="text-sm md:text-lg text-gray-800 leading-relaxed mb-8">
                 Her father worked at a paper company, and her mother educated
                 the children in their free time by playing unofficial tour guide
                 for Wisconsin’s industries, state parks, historical landmarks,
@@ -38,7 +38,7 @@ export default function Author() {
                 meeting fresh faces, and trying new foods. She loved the
                 adventure, and the journey is something she still enjoys.
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed">
+              <p className="text-sm md:text-lg text-gray-800 leading-relaxed">
                 While Kelly Jo presently lives in Kentucky, her heart forever
                 remains in the great state of Wisconsin.
               </p>
