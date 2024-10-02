@@ -5,7 +5,6 @@ import '@/styles/globals.css';
 export const metadata = {
   title: 'The Wisconsin Bucket List',
   description: 'Explore Wisconsin like never before',
-  href: "/tabIcon.png"
 };
 
 export default function RootLayout({
