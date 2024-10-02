@@ -44,6 +44,22 @@ export default function Media() {
             </div>
           </div>
 
+          {/* Third YouTube Video Embed */}
+          <div
+            style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
+            className="w-full max-w-sm md:max-w-xl mx-auto mb-20 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
+          >
+            <div className="responsive-video">
+              <iframe
+                src="https://www.youtube.com/embed/JNpJ5TfBNiA?si=oihraVxu_E-cHck3" 
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           {/* Amazon Link */}
           <div
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
