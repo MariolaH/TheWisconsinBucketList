@@ -26,6 +26,7 @@ export default function Home() {
               width={150} // Smaller size for mobile
               height={250}
               className="shadow-lg md:w-[300px] md:h-[430px]" // Set desktop size with md breakpoint
+              priority
             />
           </div>
 

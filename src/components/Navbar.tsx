@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import { usePathname } from 'next/navigation'; // Use the new hook
 
@@ -19,6 +20,22 @@ const Navbar = () => {
   };
 
   return (
+    <>
+
+<Head>
+        {/* Essential Meta Tags */}
+        <meta property="og:title" content="The Wisconsin Bucket List" />
+        <meta property="og:description" content="Explore the best places to visit in Wisconsin." />
+        <meta property="og:image" content="/book.png" /> {/* Path to your desired image */}
+        <meta property="og:url" content="https://bookthewisconsinbucketlist.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Other Meta Tags */}
+        <title>The Wisconsin Bucket List</title>
+      </Head>
+
     <nav style={{ backgroundColor: '#EE1925' }} className="p-4 w-full fixed top-0 left-0 z-50 overflow-hidden">
       <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
@@ -29,8 +46,8 @@ const Navbar = () => {
               alt="Bucket List Logo" 
               width={110} 
               height={130} 
-              className="w-34 h-34 md:w-48 md:h-48 lg:w-52 lg:h-52" 
-            />
+              className="w-34 h-34 md:w-48 md:h-48 lg:w-34 lg:h-34" 
+              />
           </Link>
         </div>
 
@@ -43,13 +60,13 @@ const Navbar = () => {
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-            >
+              >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
+                ></path>
             </svg>
           </button>
         </div>
@@ -59,25 +76,25 @@ const Navbar = () => {
           <Link 
             href="/shop" 
             className={`${isCurrentPage('/shop') ? 'text-black' : 'text-white'} no-underline`}
-          >
+            >
             Shop
           </Link>
           <Link 
             href="/author" 
             className={`${isCurrentPage('/author') ? 'text-black' : 'text-white'} no-underline`}
-          >
+            >
             Author
           </Link>
           <Link 
             href="/media" 
             className={`${isCurrentPage('/media') ? 'text-black' : 'text-white'} no-underline`}
-          >
+            >
             Media
           </Link>
           <Link 
             href="/contact" 
             className={`${isCurrentPage('/contact') ? 'text-black' : 'text-white'} no-underline`}
-          >
+            >
             Contact
           </Link>
         </div>
@@ -85,7 +102,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center text-white space-y-2 mt-2">
+          <div className="md:hidden flex flex-col items-center text-white space-y-2 mt-2">
           <Link href="/shop" className={`${isCurrentPage('/shop') ? 'text-black' : 'text-white'} no-underline block py-2`}>
             Shop
           </Link>
@@ -101,6 +118,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+      </>
   );
 };
 
