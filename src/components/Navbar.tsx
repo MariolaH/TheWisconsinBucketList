@@ -27,8 +27,8 @@ const Navbar = () => {
             <Image 
               src="/state.png" 
               alt="Bucket List Logo" 
-              width={150} 
-              height={170} 
+              width={110} 
+              height={130} 
               className="w-34 h-34 md:w-48 md:h-48 lg:w-52 lg:h-52" 
             />
           </Link>
