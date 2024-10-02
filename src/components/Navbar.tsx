@@ -33,7 +33,7 @@ const Navbar = () => {
         <meta property="og:image:height" content="630" />
 
         {/* Other Meta Tags */}
-        <title>The Wisconsin Bucket List</title>
+        <title>The Wisconsin Bucket List Book</title>
       </Head>
 
     <nav style={{ backgroundColor: '#EE1925' }} className="p-4 w-full fixed top-0 left-0 z-50 overflow-hidden">
