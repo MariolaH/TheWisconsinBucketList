@@ -4,11 +4,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { usePathname } from 'next/navigation'; // Use the new hook
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();  // New way to get the current path in app directory
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const isCurrentPage = (path: string) => {
+    return pathname === path;
   };
 
   return (
@@ -16,13 +23,13 @@ const Navbar = () => {
       <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
-          {/* Logo size adjusts for mobile and desktop */}
           <Link href="/">
             <Image 
-              src="/stateWI.png" 
+              src="/state.png" 
               alt="Bucket List Logo" 
-              width={150} height={170} // Adjusted size for mobile
-              className="w-34 h-34 md:w-48 md:h-48 lg:w-52 lg:h-52" // Use Tailwind classes for responsiveness
+              width={150} 
+              height={170} 
+              className="w-34 h-34 md:w-48 md:h-48 lg:w-52 lg:h-52" 
             />
           </Link>
         </div>
@@ -49,20 +56,48 @@ const Navbar = () => {
 
         {/* Navigation Links for desktop */}
         <div className="hidden md:flex space-x-52 text-white text-2xl font-bold">
-          <Link href="/shop" className="hover:underline">Shop</Link>
-          <Link href="/author" className="hover:underline">Author</Link>
-          <Link href="/media" className="hover:underline">Media</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
+          <Link 
+            href="/shop" 
+            className={`${isCurrentPage('/shop') ? 'text-black' : 'text-white'} no-underline`}
+          >
+            Shop
+          </Link>
+          <Link 
+            href="/author" 
+            className={`${isCurrentPage('/author') ? 'text-black' : 'text-white'} no-underline`}
+          >
+            Author
+          </Link>
+          <Link 
+            href="/media" 
+            className={`${isCurrentPage('/media') ? 'text-black' : 'text-white'} no-underline`}
+          >
+            Media
+          </Link>
+          <Link 
+            href="/contact" 
+            className={`${isCurrentPage('/contact') ? 'text-black' : 'text-white'} no-underline`}
+          >
+            Contact
+          </Link>
         </div>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center text-white space-y-2 mt-2">
-          <Link href="/shop" className="block py-2">Shop</Link>
-          <Link href="/author" className="block py-2">Author</Link>
-          <Link href="/media" className="block py-2">Media</Link>
-          <Link href="/contact" className="block py-2">Contact</Link>
+          <Link href="/shop" className={`${isCurrentPage('/shop') ? 'text-black' : 'text-white'} no-underline block py-2`}>
+            Shop
+          </Link>
+          <Link href="/author" className={`${isCurrentPage('/author') ? 'text-black' : 'text-white'} no-underline block py-2`}>
+            Author
+          </Link>
+          <Link href="/media" className={`${isCurrentPage('/media') ? 'text-black' : 'text-white'} no-underline block py-2`}>
+            Media
+          </Link>
+          <Link href="/contact" className={`${isCurrentPage('/contact') ? 'text-black' : 'text-white'} no-underline block py-2`}>
+            Contact
+          </Link>
         </div>
       )}
     </nav>
@@ -70,5 +105,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

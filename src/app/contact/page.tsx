@@ -27,7 +27,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="text-sm md:text-lg font-semibold text-black text-left"
             >
-              Check out the Facebook page
+              Join the Conversation on Facebook
             </a>
           </div>
 
@@ -42,12 +42,12 @@ export default function Contact() {
               className="w-50 h-10 md:w-30 md:h-16 mr-4" // Mobile and desktop sizes
             />
             <a
-              href="https://www.caveofthemounds.com/"
+              href="https://x.com/wibucketlist"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm md:text-lg font-semibold text-black text-left"
             >
-              Check out the X page
+              See What’s Buzzing on X 
             </a>
           </div>
           {/* Amazon Link */}
@@ -66,7 +66,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="text-sm md:text-lg font-semibold text-black text-left"
             >
-              Check out the Amazon page
+              Shop on Amazon
             </a>
           </div>
         </div>
