@@ -21,8 +21,8 @@ export default function Contact() {
               src="/facebook.png"
               alt="Facebook"
               className="w-30 h-10 md:w-16 md:h-16 mr-4" // Mobile and desktop sizes
-              width={64}
-              height={64}
+              width={40}
+              height={44}
             />
             <a
               href="https://www.facebook.com/TheWisconsinBucketList?mibextid=LQQJ4d"
@@ -43,8 +43,8 @@ export default function Contact() {
               src="/X.png"
               alt="X"
               className="w-50 h-10 md:w-30 md:h-16 mr-4" // Mobile and desktop sizes
-              width={64} 
-              height={64}
+              width={40} 
+              height={44}
             />
             <a
               href="https://x.com/wibucketlist"
