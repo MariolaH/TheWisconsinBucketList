@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
-      <link rel="icon" href="/WIstate.png" />
+      <link rel="icon" href="/book.png" />
     </html>
   );
 }
