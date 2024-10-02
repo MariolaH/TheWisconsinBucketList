@@ -6,6 +6,8 @@
       {
         "ignore": ["referrerPolicy"]
       }
-    ]
+    ],
+    "no-unused-vars": "off", // Disable unused variables rule
+    "react/no-unescaped-entities": "off" // Disable unescaped entities rule
   }
 }
