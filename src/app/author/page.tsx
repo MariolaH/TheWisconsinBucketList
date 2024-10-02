@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function Author() {
   return (
@@ -49,7 +50,7 @@ export default function Author() {
               className="shadow-lg rounded-lg"
             >
             <div className="flex justify-center items-center">
-              <img
+              <Image
                 src="/roadMap.png"
                 alt="Kelly Jo Stull"
                 className="rounded-lg "

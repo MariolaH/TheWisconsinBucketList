@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -16,7 +17,7 @@ export default function Contact() {
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
             className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
           >
-            <img
+            <Image
               src="/facebook.png"
               alt="Facebook"
               className="w-30 h-10 md:w-16 md:h-16 mr-4" // Mobile and desktop sizes
@@ -36,7 +37,7 @@ export default function Contact() {
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
             className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
           >
-            <img
+            <Image
               src="/X.png"
               alt="X"
               className="w-50 h-10 md:w-30 md:h-16 mr-4" // Mobile and desktop sizes
@@ -55,7 +56,7 @@ export default function Contact() {
             style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
             className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
           >
-            <img
+            <Image
               src="/amazon.png"
               alt="Amazon"
               className="w-10 h-10 md:w-16 md:h-16 mr-4" // Mobile and desktop sizes

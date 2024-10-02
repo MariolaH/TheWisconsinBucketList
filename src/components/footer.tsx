@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
   const Footer = () => {
     return (
         <div className='pt-12'>
@@ -7,7 +9,7 @@
         <div className="container mx-auto text-center flex flex-col items-center">
           <div className="mb-4">
             {/* Publisher Image */}
-            <img 
+            <Image 
               src="/publisher.png" 
               alt="Publisher Logo" 
               className="w-20 h-auto md:w-32 md:h-auto mr-4"// Adjust width and height as needed

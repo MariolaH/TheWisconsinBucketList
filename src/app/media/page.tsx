@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function Media() {
   return (
@@ -54,7 +55,7 @@ export default function Media() {
               rel="noopener noreferrer"
             >
               <div className="responsive-video">
-                <img
+                <Image
                   src="/article.png"
                   alt="Amazon"
                   className="w-full h-auto" // Full width with automatic height adjustment
