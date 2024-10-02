@@ -1,9 +1,5 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-
   const Footer = () => {
     return (
         <div className='pt-12'>
