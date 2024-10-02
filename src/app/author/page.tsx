@@ -50,7 +50,7 @@ export default function Author() {
             >
             <div className="flex justify-center items-center">
               <img
-                src="/bioPic.png"
+                src="/roadMap.png"
                 alt="Kelly Jo Stull"
                 className="rounded-lg shadow-lg"
               />
