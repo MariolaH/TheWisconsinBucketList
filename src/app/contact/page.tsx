@@ -42,7 +42,7 @@ export default function Contact() {
             <Image
               src="/X.png"
               alt="X"
-              className="w-50 h-10 md:w-30 md:h-16 mr-4" // Mobile and desktop sizes
+              className="w-30 h-10 md:w-14 md:h-14 mr-4 object-contain mr-4" // Mobile and desktop sizes
               width={40} 
               height={44}
             />
