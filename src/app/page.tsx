@@ -23,8 +23,8 @@ export default function Home() {
             <Image
               src="/book.png" // Replace with your book cover image path
               alt="The Wisconsin Bucket List"
-              width={300} // Smaller size for mobile
-              height={400}
+              width={150} // Smaller size for mobile
+              height={250}
               className="shadow-lg md:w-[300px] md:h-[430px]" // Set desktop size with md breakpoint
             />
           </div>
