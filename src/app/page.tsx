@@ -23,8 +23,8 @@ export default function Home() {
             <Image
               src="/book.png" // Replace with your book cover image path
               alt="The Wisconsin Bucket List"
-              width={200} // Smaller size for mobile
-              height={300}
+              width={300} // Smaller size for mobile
+              height={400}
               className="shadow-lg md:w-[300px] md:h-[430px]" // Set desktop size with md breakpoint
             />
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
           {/* Description */}
           <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left bg-gray-100 p-8 rounded-lg shadow-lg">
             <p className="text-sm md:text-lg text-gray-800 ">
-              Whether Wisconsin is your home or you're visiting America's
+              Whether Wisconsin is your home or you&quot;re visiting America&quot;s
               Dairyland, this book is your guide to adventures filled with
               purpose, meaning, and accomplishment.
             </p>
@@ -46,7 +46,7 @@ export default function Home() {
             </p>
             <p className="text-sm md:text-lg text-gray-800 mt-4">
               These fun-filled experiences and family adventures will create
-              memories that last a lifetime. You’ll explore new places, meet
+              memories that last a lifetime. You&quot;ll explore new places, meet
               fascinating people, and savor unique foods, all while gaining a
               deeper appreciation for the culture that makes Wisconsin so
               special.

@@ -59,6 +59,8 @@ export default function Media() {
                   src="/article.png"
                   alt="Amazon"
                   className="w-full h-auto" // Full width with automatic height adjustment
+                  width={290}
+                  height={290}
                 />
               </div>
             </a>

@@ -53,7 +53,9 @@ export default function Author() {
               <Image
                 src="/roadMap.png"
                 alt="Kelly Jo Stull"
-                className="rounded-lg "
+                className="rounded-lg"
+                width={575}
+              height={565}
               />
             </div>
             </div>
