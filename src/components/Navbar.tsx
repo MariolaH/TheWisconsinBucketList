@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Head from 'next/head';
 
 import { usePathname } from 'next/navigation'; // Use the new hook
 

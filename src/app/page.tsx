@@ -1,30 +1,9 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
-import Head from 'next/head';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        {/* Essential Meta Tags */}
-        <meta property="og:title" content="The Wisconsin Bucket List" />
-        <meta
-          property="og:description"
-          content="Explore the best places to visit in Wisconsin."
-        />
-        <meta property="og:image" content="/book.png" />{" "}
-        {/* Path to your desired image */}
-        <meta
-          property="og:url"
-          content="https://bookthewisconsinbucketlist.com"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        {/* Other Meta Tags */}
-        <title>The Wisconsin Bucket List</title>
-      </Head>
 
       <div className="bg-white min-h-screen">
         <Navbar />
@@ -106,6 +85,5 @@ export default function Home() {
 
         <Footer />
       </div>
-    </>
   );
 }
