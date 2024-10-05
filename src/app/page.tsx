@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
+import Head from "next/head";
 
 export default function Home() {
   return (
-
+    <>
+      <Head>
+        <title>The Wisconsin Bucket List Book</title>
+        <meta name="description" content="The Wisconsin Bucket List Book" />
+        <meta
+          name="keywords"
+          content="The Wisconsin Bucket List Book, Kelly Jo Stull, Wisconsin, Bucket List"
+        />
+      </Head>
       <div className="bg-white min-h-screen">
         <Navbar />
 
@@ -85,5 +94,6 @@ export default function Home() {
 
         <Footer />
       </div>
+    </>
   );
 }
