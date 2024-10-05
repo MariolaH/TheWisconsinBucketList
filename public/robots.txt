@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.bookthewisconsinbucketlist.com/
+
+# Sitemaps
+Sitemap: https://www.bookthewisconsinbucketlist.com/sitemap.xml
