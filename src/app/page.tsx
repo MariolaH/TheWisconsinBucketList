@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="The Wisconsin Bucket List Book" />
         <meta
           name="keywords"
-          content="The Wisconsin Bucket List Book, Kelly Jo Stull, Wisconsin, Bucket List"
+          content="The Wisconsin Bucket List Book, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull"
         />
       </Head>
       <div className="bg-white min-h-screen">
