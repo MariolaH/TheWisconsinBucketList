@@ -11,8 +11,9 @@ export default function Author() {
         <meta name="description" content="About Kelly Jo Stull" />
         <meta
           name="keywords"
-          content="The Wisconsin Bucket List Book, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull"
+          content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull"
         />
+        <link href="https://www.bookthewisconsinbucketlist.com" rel="canonical" />
       </Head>
       <div className="bg-white min-h-screen">
         <Navbar />
