@@ -13,8 +13,26 @@ export default function Home() {
           name="keywords"
           content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull, The Wisconsin Bucket List Kelly Jo Stull"
         />
-        <link href="https://www.bookthewisconsinbucketlist.com" rel="canonical" />
+        <link
+          href="https://www.bookthewisconsinbucketlist.com"
+          rel="canonical"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="The Wisconsin Bucket List Book" />
+        <meta
+          property="og:description"
+          content="Plan your next Wisconsin adventure with The Wisconsin Bucket List book."
+        />
+        <meta
+          property="og:image"
+          content="https://www.bookthewisconsinbucketlist.com/book.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.bookthewisconsinbucketlist.com"
+        />
+        <meta property="og:type" content="website" />
       </Head>
       <div className="bg-white min-h-screen">
         <Navbar />
