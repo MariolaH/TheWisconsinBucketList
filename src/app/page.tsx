@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="The Wisconsin Bucket List Book" />
         <meta
           name="keywords"
-          content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull"
+          content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull, The Wisconsin Bucket List Kelly Jo Stull"
         />
         <link href="https://www.bookthewisconsinbucketlist.com" rel="canonical" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

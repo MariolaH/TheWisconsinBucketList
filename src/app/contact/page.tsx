@@ -11,7 +11,7 @@ export default function Contact() {
         <meta name="description" content="Contact" />
         <meta
           name="keywords"
-          content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull"
+          content="The Wisconsin Bucket List Book, Wisconsin tourism, Kelly Jo Stull, Wisconsin, Bucket List, Kelly Stull, The Wisconsin Bucket List Kelly Jo Stull"
         />
         <link href="https://www.bookthewisconsinbucketlist.com" rel="canonical" />
       </Head>
