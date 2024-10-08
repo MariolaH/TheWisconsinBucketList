@@ -24,10 +24,8 @@ export default function Home() {
           property="og:description"
           content="Plan your next Wisconsin adventure with The Wisconsin Bucket List book."
         />
-        <meta
-          property="og:image"
-          content="https://www.bookthewisconsinbucketlist.com/book.png"
-        />
+      <meta property="og:image" content="https://www.bookthewisconsinbucketlist.com/book.png" />
+
         <meta
           property="og:url"
           content="https://www.bookthewisconsinbucketlist.com"
