@@ -102,6 +102,27 @@ export default function Contact() {
                 Shop on Amazon
               </a>
             </div>
+            <div
+              style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
+              className="w-full max-w-sm md:max-w-xl mx-auto mb-6 p-4 md:p-8 bg-gray-100 shadow-lg rounded-lg flex items-center transform transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-2xl"
+            >
+              <Image
+                src="/email.png" 
+                alt="email"
+                className="w-30 h-10 md:w-14 md:h-14 mr-4 object-contain mr-4" // Mobile and desktop sizes
+                width={40}
+                height={44}
+              />
+
+              <a
+                href="mailto:celestialgroundhog@yahoo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm md:text-lg font-semibold text-black text-left"
+              >
+               Email us
+              </a>
+            </div>
           </div>
         </div>
         <Footer />
