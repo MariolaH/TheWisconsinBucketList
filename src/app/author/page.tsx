@@ -35,7 +35,7 @@ export default function Author() {
         <Navbar />
         <div className="pt-40 md:pt-40">
           <div className="container mx-auto py-24 px-4 md:px-12">
-            <h1 className="text-2xl md:text-3xl font-bold text-black mb-12 ml-6 md:ml-5 text-left md:py-10">
+            <h1 className="text-2xl md:text-3xl font-bold text-black mb-12 ml-6 md:ml-5 text-left md:py-10 animate-fade-right animate-once">
               About Kelly Jo Stull
             </h1>
 

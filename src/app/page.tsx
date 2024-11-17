@@ -102,7 +102,7 @@ export default function Home() {
                   boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)",
                   backgroundColor: "#EE1925",
                 }}
-                className="text-white font-bold py-3 px-6 md:py-4 md:px-12 rounded mt-6 inline-block text-lg md:text-xl transform transition-all duration-300 hover:bg-red-900 hover:scale-105 hover:shadow-2xl"
+                className="text-white font-bold py-3 px-6 md:py-4 md:px-12 rounded mt-6 inline-block text-lg md:text-xl transform transition-all duration-300 hover:bg-red-900 hover:scale-105 hover:shadow-2xl animate-shake animate-infinite animate-duration-1000 animate-ease-linear"
               >
                 Buy Now
               </button>

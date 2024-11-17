@@ -34,7 +34,7 @@ export default function Media() {
         <Navbar />
         <div className="pt-40 md:pt-40">
           <div className="container mx-auto py-24 text-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-black mb-20 ml-6 md:ml-20 text-left md:py-10">
+            <h1 className="text-2xl md:text-3xl font-bold text-black mb-20 ml-6 md:ml-20 text-left md:py-10 animate-fade-right animate-once">
               Media
             </h1>
 
