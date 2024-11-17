@@ -30,7 +30,8 @@ const Navbar = () => {
                 width={110} 
                 height={130} 
                 priority // Ensures the image loads quickly
-                className="w-34 h-34 md:w-48 md:h-48 lg:w-34 lg:h-34" 
+                className="w-34 h-34 md:w-48 md:h-48 lg:w-34 lg:h-34"
+                style={{ transition: 'none', animation: 'none' }} // Explicitly remove animation and transitions
               />
             </Link>
           </div>
