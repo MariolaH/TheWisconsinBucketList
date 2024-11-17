@@ -31,6 +31,7 @@ const Navbar = () => {
         width={110} 
         height={130} 
         priority 
+        loading="eager" 
         className="w-full h-full" 
         style={{ transition: 'none', animation: 'none' }} // Explicitly remove any animation
       />
