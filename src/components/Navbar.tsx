@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'; // Use the new hook
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();  // New way to get the current path in app directory
+  const pathname = usePathname(); // New way to get the current path in app directory
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav style={{ backgroundColor: '#EE1925' }} className="p-4 w-full fixed top-0 left-0 z-50 overflow-hidden">
+      <nav style={{ backgroundColor: '#EE1925' }} className="p-4 w-full fixed top-0 left-0 z-50">
         <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
@@ -85,10 +85,10 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         <div 
-  className={`md:hidden transition-max-height duration-1000 cubic-bezier(0.25, 1, 0.5, 1) overflow-hidden ${
-    isOpen ? 'max-h-96' : 'max-h-0'
-  }`}
->
+          className={`md:hidden transition-all duration-1000 ease-in-out overflow-hidden ${
+            isOpen ? 'max-h-96' : 'max-h-0'
+          }`}
+        >
           <div className="flex flex-col items-center text-white space-y-2 mt-2">
             <Link href="/shop" className={`${isCurrentPage('/shop') ? 'text-black' : 'text-white'} no-underline block py-2`}>
               Shop
