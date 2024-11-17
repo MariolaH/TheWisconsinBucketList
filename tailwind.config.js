@@ -11,9 +11,14 @@ module.exports = {
           DEFAULT: '#EE1925',  // Use HEX color code here
         },
       },
+      fontFamily: {
+        abyssinica: ['"Abyssinica SIL"', 'serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
 
 
