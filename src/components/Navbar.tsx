@@ -23,18 +23,21 @@ const Navbar = () => {
         <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <Link href="/">
-              <Image 
-                src="/state.png" 
-                alt="Bucket List Logo" 
-                width={110} 
-                height={130} 
-                priority // Ensures the image loads quickly
-                className="w-34 h-34 md:w-48 md:h-48 lg:w-34 lg:h-34"
-                style={{ transition: 'none', animation: 'none' }} // Explicitly remove animation and transitions
-              />
-            </Link>
-          </div>
+  <Link href="/">
+    <div style={{ width: '110px', height: '130px' }}> {/* Add fixed width and height */}
+      <Image 
+        src="/state.png" 
+        alt="Bucket List Logo" 
+        width={110} 
+        height={130} 
+        priority 
+        className="w-full h-full" 
+        style={{ transition: 'none', animation: 'none' }} // Explicitly remove any animation
+      />
+    </div>
+  </Link>
+</div>
+
 
           {/* Hamburger Menu Icon for mobile */}
           <div className="md:hidden">
