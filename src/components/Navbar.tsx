@@ -29,6 +29,7 @@ const Navbar = () => {
                 alt="Bucket List Logo" 
                 width={110} 
                 height={130} 
+                priority // Ensures the image loads quickly
                 className="w-34 h-34 md:w-48 md:h-48 lg:w-34 lg:h-34" 
               />
             </Link>
