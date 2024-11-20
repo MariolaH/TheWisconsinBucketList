@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           {/* Buy Now Button */}
-          <div className="text-center mt-8 py-10 md:py-20">
+          <div className="text-center py-10 md:py-20 pb-20 md:pb-40">
             <a
               href="https://www.amazon.com/Wisconsin-Bucket-List-Ways-Experience/dp/1628470283"
               target="_blank"

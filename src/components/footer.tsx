@@ -4,8 +4,7 @@ import Image from "next/image";
 
   const Footer = () => {
     return (
-        <div className='pt-12'>
-      <footer  className="bg-gray-200 text-black py-6">
+      <footer  className="bg-gray-200 text-black py-12">
         <div className="container mx-auto text-center flex flex-col items-center">
           <div className="mb-4">
             {/* Publisher Image */}
@@ -25,7 +24,6 @@ import Image from "next/image";
           </p>
         </div>
       </footer>
-      </div>
     );
   };
   
