@@ -39,7 +39,7 @@ export default function Home() {
         <div className="pt-40 md:pt-40">
           {/* Header Section */}
           <header className="container mx-auto py-5 md:py-24 text-center px-4 md:px-0">
-            <h1 className="text-2xl md:text-3xl font-bold text-black py-12 md:py-24 italic">
+            <h1 className="text-2xl md:text-3xl font-bold text-black py-12 md:py-24 italic animate-fade-right animate-once">
               Why just visit when you can explore?
             </h1>
           </header>
