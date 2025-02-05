@@ -39,7 +39,7 @@ export default function Author() {
               About Kelly Jo Stull
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Text Section in Container */}
               <div
                 style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
@@ -73,19 +73,15 @@ export default function Author() {
               </div>
 
               {/* Image Section */}
-              <div
-                style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
-                className="shadow-lg rounded-lg"
+                <div className="flex justify-center items-center shadow-lg rounded-lg" style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.25)" }}
               >
-                <div className="flex justify-center items-center">
                   <Image
                     src="/roadMap.png"
                     alt="Kelly Jo Stull"
-                    className="rounded-lg"
+                    className="rounded-lg w-full h-full object-cover"
                     width={575}
                     height={565}
                   />
-                </div>
               </div>
             </div>
           </div>
